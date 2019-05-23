@@ -1,8 +1,8 @@
 import express from "express";
 // import axios from "axios";
-// import dotenv from "dotenv";
+import dotenv from "dotenv";
 
-// dotenv.load();
+dotenv.config({ path: "./.env" });
 
 const bodyParser = require("body-parser");
 
@@ -27,8 +27,7 @@ apiRouterV1.use((req, res, next) => {
 ////////////////
 
 apiRouterV1.get("/version", (req, res) => {
-    // res.status(200).send(process.env.VERSION);
-    res.status(200).send("uss");
+    res.status(200).send(process.env.VERSION);
 });
 
 apiRouterV1.get("*", (req, res) => {
