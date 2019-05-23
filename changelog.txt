@@ -3,3 +3,4 @@ PM changelog:
 May 23, 2019 - 0.0.01
 ===============================================================================
 issue:    Initial structure setup
+issue:    React/redux structure
